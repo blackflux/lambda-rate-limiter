@@ -1,0 +1,14 @@
+# IDE Specific
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# OS Specific
+.DS_Store
+
+# Node Specific
+node_modules
+npm-debug.log
+
+# Test Specific
+coverage/
