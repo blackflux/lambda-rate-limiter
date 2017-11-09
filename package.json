@@ -27,7 +27,7 @@
     "node": ">= 6.10.3"
   },
   "scripts": {
-    "test": "check-build && istanbul cover node_modules/mocha/bin/_mocha",
+    "test": "eslint lib/**.js test/**.js && istanbul cover node_modules/mocha/bin/_mocha",
     "coveralls": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
@@ -36,7 +36,6 @@
   "devDependencies": {
     "babel-eslint": "8.0.1",
     "chai": "4.1.2",
-    "check-build": "2.8.2",
     "coveralls": "2.13.1",
     "eslint": "4.10.0",
     "eslint-config-airbnb-base": "12.1.0",
