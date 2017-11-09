@@ -14,7 +14,8 @@ instrumentation:
 reporting:
     print: summary
     reports:
-        - lcov
+        - cobertura
+        - lcovonly
     dir: ./coverage
     watermarks:
         statements: [50, 80]
