@@ -1,13 +1,43 @@
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs"],
+    "enable": ["jshint", "eslint", "jscs", "jsinspect", "plato", "nsp", "david", "plato"],
     "continueOnError": true,
     "allowFailures": false
   },
+ 
   "jshint": {
+    "args": ["lib/**/*.js", "test/**/*.js"]
+  },
+ 
+ "eslint": {
+    "args": ["lib/**/*.js", "test/**/*.js"]
+  },
+ 
+  "jscs": {
+    "args": ["lib/**/*.js", "test/**/*.js"]
+  },
+ 
+  "jsinspect": {
+    "args": ["lib/**/*.js", "test/**/*.js"],
+    "diff": true
+  },
+ 
+  "buddyjs": {
     "args": ["lib/**/*.js"]
   },
-  "jscs": {
-    "args": ["lib/**/*.js"]
+ 
+  "plato": {
+    "args": ["lib/**/*.js", "test/**/*.js"],
+    "maintainability": 75.00
+  },
+ 
+  "nsp": {
+    "args": []
+  },
+ 
+  "david": {
+    "dev": false,
+    "stable": true,
+    "ignore": []
   }
 }
