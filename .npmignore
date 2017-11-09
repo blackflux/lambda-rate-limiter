@@ -1,6 +1,5 @@
 test/
 coverage/
-.jshintrc
-.jscsrc
-.checkbuild
+.eslintrc
+.istanbul.yml
 .travis.yml
