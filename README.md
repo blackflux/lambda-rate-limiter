@@ -19,8 +19,8 @@ Run
 To initialize
 ```javascript
 const limiter = require("lambda-rate-limiter")({
-  interval: 60000,  // rate limit interval in seconds, starts on first request
-  uniqueIPsPerInterval: 500  // more ips cause earliest seen to get dropped, per instantiation (!)
+  interval: 60000,  // rate limit interval in ms, starts on first request
+  uniqueIPsPerInterval: 500  // excess causes earliest seen to drop, per instantiation
 });
 ```
 
@@ -32,7 +32,7 @@ limiter
       // rate limit exceeded: 429
     })
     .then(() => {
-      // counted, but not yet limited
+      // ok
     });
 ```
 where `token` could be the user ip or login.
