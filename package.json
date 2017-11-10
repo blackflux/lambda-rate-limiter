@@ -1,7 +1,7 @@
 {
   "name": "lambda-rate-limiter",
   "description": "Simple in-memory rate-limit for Node.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/simlu/lambda-rate-limiter",
   "license": "MIT",
   "author": {
