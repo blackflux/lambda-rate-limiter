@@ -11,13 +11,6 @@ module.exports = (grunt) => {
     ls.on('exit', code => grunt.log.ok(`Child process exited with code ${code}`) && resolve());
   });
 
-  // fetch all files we want to ignore
-  const eslintignore = grunt.file
-    .read(".eslintignore").split("\n")
-    .map(e => e.trim())
-    .filter(e => e !== "" && !e.startsWith("#"))
-    .map(e => `!${e}`);
-
   // init project config
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -28,8 +21,12 @@ module.exports = (grunt) => {
         maxWarnings: 0
       },
       target: [
-        '**'
-      ].concat(eslintignore)
+        '**',
+        '!node_modules/**',
+        '!coverage/**',
+        '!README.md',
+        '!LICENSE'
+      ]
     },
     yamllint: {
       options: {
