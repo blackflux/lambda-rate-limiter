@@ -27,13 +27,13 @@ const limiter = require("lambda-rate-limiter")({
 To check for limit use
 ```javascript
 limiter
-.check(limit, token)
-.catch(() => {
-  // rate limit exceeded: 429
-})
-.then(() => {
-  // counted, but not yet limited
-});
+    .check(10, token) // define maximum of 10 requests per interval
+    .catch(() => {
+      // rate limit exceeded: 429
+    })
+    .then(() => {
+      // counted, but not yet limited
+    });
 ```
 where `token` could be the user ip or login.
 
