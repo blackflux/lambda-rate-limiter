@@ -4,7 +4,7 @@
 
 Fast and efficient in-memory rate-limiter. No centralized storage (see below for reasoning).
 
-This rate limiter is designed for AWS Lambda and other serverless computing‎ alternatives, but is usable in any NodeJS project, regardless of whether a framework or vanilla code is used. It works great to prevent most common DOS attacks, but can also be used for simple rate limiting. However accuracy is not guaranteed in the second case (see below)
+This rate limiter is designed for AWS Lambda and other serverless computing‎ alternatives, but is usable in any NodeJS project, regardless of whether a framework or vanilla code is used. It works great to prevent most common DOS attacks, but can also be used for simple rate limiting. However accuracy is not guaranteed in the second case (see below).
 
 Uses [lru-cache](https://www.npmjs.com/package/lru-cache) for storage.
 
