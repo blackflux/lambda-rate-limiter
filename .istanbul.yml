@@ -2,7 +2,10 @@ verbose: false
 instrumentation:
     root: .
     default-excludes: false
-    excludes: ['**/node_modules/**']
+    excludes: [
+      '**/node_modules/**',
+      'Gruntfile.js'
+    ]
     embed-source: false
     variable: __coverage__
     compact: true
