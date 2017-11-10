@@ -1,7 +1,7 @@
 {
   "name": "lambda-rate-limiter",
   "description": "Simple in-memory rate-limit for Node.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/simlu/lambda-rate-limiter",
   "license": "MIT",
   "author": {
@@ -27,23 +27,25 @@
     "node": ">= 6.10.3"
   },
   "scripts": {
-    "test": "eslint lib/**.js test/**.js && istanbul cover node_modules/mocha/bin/_mocha",
-    "coveralls": "istanbul cover node_modules/mocha/bin/_mocha && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+    "test": "grunt test",
+    "coveralls": "grunt mocha_istanbul:coverage && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
   },
   "dependencies": {
     "lru-cache": "4.1.1"
   },
   "devDependencies": {
-    "grunt": "1.0.1",
     "babel-eslint": "8.0.2",
     "chai": "4.1.2",
     "coveralls": "3.0.0",
-    "eslint": "4.10.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jasmine": "2.9.1",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-mocha": "4.11.0",
+    "grunt": "1.0.1",
+    "grunt-eslint": "20.1.0",
+    "grunt-mocha-istanbul": "5.0.2",
+    "grunt-yamllint": "0.3.0",
     "istanbul": "0.4.5",
     "mocha": "4.0.1",
     "mocha-lcov-reporter": "1.3.0"

@@ -1,5 +1,5 @@
-test/
+conf/
 coverage/
-.eslintrc
-.istanbul.yml
+tests/
 .travis.yml
+Gruntfile.js
