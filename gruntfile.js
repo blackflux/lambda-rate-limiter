@@ -47,7 +47,7 @@ module.exports = (grunt) => {
             functions: 100
           },
           excludes: [
-            'Gruntfile.js',
+            'gruntfile.js',
             'conf/rules/*.js',
             '**/node_modules/**'
           ],

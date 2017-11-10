@@ -2,4 +2,4 @@ conf/
 coverage/
 tests/
 .travis.yml
-Gruntfile.js
+gruntfile.js
