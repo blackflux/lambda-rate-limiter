@@ -1,5 +1,5 @@
 {
-  "name": "fast-ratelimit",
+  "name": "lambda-rate-limiter",
   "description": "Simple in-memory rate-limit for Node.",
   "version": "1.0.0",
   "homepage": "https://github.com/simlu/lambda-rate-limiter",
