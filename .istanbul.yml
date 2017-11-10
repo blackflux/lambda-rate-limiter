@@ -1,8 +1,8 @@
 verbose: false
 instrumentation:
     root: .
-    default-excludes: true
-    excludes: []
+    default-excludes: false
+    excludes: ['**/node_modules/**']
     embed-source: false
     variable: __coverage__
     compact: true
@@ -14,6 +14,7 @@ instrumentation:
 reporting:
     print: summary
     reports:
+        - lcov
         - cobertura
         - lcovonly
     dir: ./coverage
