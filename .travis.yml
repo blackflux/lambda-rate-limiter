@@ -12,4 +12,4 @@ after_success:
   - echo -n $GIT_TAG > public/version
   - git commit -m "Set build VERSION number" public/version
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/example-backend-api $GIT_TAG > /dev/null 2>&1
+  - git push --quiet https://$GITHUBKEY@github.com/simlu/lambda-rate-limiter $GIT_TAG > /dev/null 2>&1
