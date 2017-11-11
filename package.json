@@ -28,7 +28,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "coveralls": "grunt mocha_istanbul:coverage && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+    "coveralls": "grunt mocha_istanbul:coverage && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
