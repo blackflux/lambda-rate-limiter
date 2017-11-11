@@ -25,7 +25,7 @@ To initialize
 ```javascript
 const limiter = require("lambda-rate-limiter")({
   interval: 60000,  // rate limit interval in ms, starts on first request
-  uniqueIPsPerInterval: 500  // excess causes earliest seen to drop, per instantiation
+  uniqueTokenPerInterval: 500  // excess causes earliest seen to drop, per instantiation
 });
 ```
 
