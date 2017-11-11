@@ -1,6 +1,11 @@
 # lambda-rate-limiter
 
-[![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter) [![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master) [![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter) [![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter) [![Gitter](https://img.shields.io/gitter/room/simlu/lambda-rate-limiter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
+[![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter)
+[![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/simlu/lambda-rate-limiter.svg)](https://greenkeeper.io/)
+[![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
+[![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
+[![Gitter](https://img.shields.io/gitter/room/simlu/lambda-rate-limiter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
 
 Fast and efficient in-memory rate-limiter. No centralized storage (see below for reasoning).
 
