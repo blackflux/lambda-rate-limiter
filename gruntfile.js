@@ -21,6 +21,29 @@ module.exports = (grunt) => {
       },
       all: ['**/*.yml', '**/*.yaml', '.*.yml', '.*.yaml']
     },
+    depcheck: {
+      options: {
+        withoutDev: false,
+        failOnUnusedDeps: true,
+        failOnMissingDeps: true,
+        listMissing: true,
+        ignoreDirs: ['.git', '.svn', '.hg', '.idea', 'node_modules', 'bower_components'],
+        ignoreMatches: [
+          'babel-eslint',
+          'eslint-config-airbnb-base',
+          'eslint-plugin-import', // used by airbnb
+          'eslint-plugin-jasmine',
+          'eslint-plugin-json',
+          'eslint-plugin-mocha',
+          'istanbul',
+          'mocha',
+          'mocha-lcov-reporter'
+        ]
+      },
+      target: [
+        '.'
+      ]
+    },
     mocha_istanbul: {
       coverage: {
         src: [
@@ -47,9 +70,10 @@ module.exports = (grunt) => {
     }
   });
 
-  grunt.loadNpmTasks('grunt-mocha-istanbul');
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-yamllint');
+  grunt.loadNpmTasks('grunt-depcheck');
+  grunt.loadNpmTasks('grunt-mocha-istanbul');
 
-  grunt.registerTask('test', ['eslint', 'yamllint', 'mocha_istanbul:coverage']);
+  grunt.registerTask('test', ['eslint', 'yamllint', 'depcheck:target', 'mocha_istanbul:coverage']);
 };
