@@ -8,7 +8,7 @@ module.exports = (grunt) => {
 
   grunt.registerMultiTask('gardener', 'Execute various tests for your project.', () => {
     const loadConfig = name => grunt.file
-      .read(`conf/${name}`).split("\n")
+      .read(`${__dirname}/conf/${name}`).split("\n")
       .map(e => e.split("#", 1)[0].trim())
       .filter(e => e !== "");
 
@@ -39,8 +39,8 @@ module.exports = (grunt) => {
       },
       eslint: {
         options: {
-          configFile: 'conf/eslint.json',
-          rulePaths: ['conf/rules'],
+          configFile: `${__dirname}/conf/eslint.json`,
+          rulePaths: [`${__dirname}/conf/rules`],
           maxWarnings: 0
         },
         this: [
@@ -51,7 +51,9 @@ module.exports = (grunt) => {
         options: {
           schema: 'DEFAULT_SAFE_SCHEMA'
         },
-        this: grunt.file.expand([
+        this: grunt.file.expand({
+          cwd: '.'
+        }, [
           '**/*.yml',
           '**/*.yaml',
           '**/.*.yml',
@@ -99,7 +101,7 @@ module.exports = (grunt) => {
             excludes: loadConfig(".coverignore"),
             mochaOptions: ['--sort'],
             istanbulOptions: ['--include-all-sources', '--default-excludes=false'],
-            root: './'
+            root: '.'
           },
           reportFormats: ['lcov', 'cobertura', 'lcovonly']
         }
