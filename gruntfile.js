@@ -73,11 +73,8 @@ module.exports = (grunt) => {
             branches: 100,
             functions: 100
           },
-          excludes: [
-            'gruntfile.js',
-            'conf/rules/*.js',
-            '**/node_modules/**'
-          ],
+          excludes: grunt.file.read(".coverignore").split("\n")
+            .map(e => e.split("#", 1)[0].trim()).filter(e => e !== ""),
           mochaOptions: ['--sort'],
           istanbulOptions: ['--include-all-sources', '--default-excludes=false'],
           root: './'
