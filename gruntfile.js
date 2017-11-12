@@ -1,6 +1,16 @@
 module.exports = (grunt) => {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    projectUpdate: {
+      this: {
+        npm: false,
+        bower: false,
+        commands: [
+          { cmd: 'npm', args: ['install'] },
+          { cmd: 'npm', args: ['prune'] }
+        ]
+      }
+    },
     eslint: {
       options: {
         configFile: 'conf/eslint.json',
@@ -19,7 +29,8 @@ module.exports = (grunt) => {
       options: {
         schema: 'DEFAULT_SAFE_SCHEMA'
       },
-      all: ['**/*.yml', '**/*.yaml', '.*.yml', '.*.yaml']
+      all: grunt.file.expand(['**/*.yml', '**/*.yaml', '**/.*.yml', '**/.*.yaml'])
+        .filter(m => !m.startsWith("node_modules"))
     },
     depcheck: {
       options: {
@@ -80,11 +91,19 @@ module.exports = (grunt) => {
     }
   });
 
+  grunt.loadNpmTasks('grunt-project-update');
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-yamllint');
   grunt.loadNpmTasks('grunt-depcheck');
   grunt.loadNpmTasks('grunt-check-dependencies');
   grunt.loadNpmTasks('grunt-mocha-istanbul');
 
-  grunt.registerTask('test', ['eslint', 'yamllint', 'depcheck', 'checkDependencies', 'mocha_istanbul']);
+  grunt.registerTask('test', [
+    'projectUpdate',
+    'eslint',
+    'yamllint',
+    'depcheck',
+    'checkDependencies',
+    'mocha_istanbul'
+  ]);
 };
