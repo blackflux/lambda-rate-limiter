@@ -18,12 +18,10 @@ module.exports = (grunt) => {
         maxWarnings: 0
       },
       target: [
-        '**',
-        '!node_modules/**',
-        '!coverage/**',
-        '!README.md',
-        '!LICENSE'
-      ]
+        '**'
+      ].concat(grunt.file.read(".eslintignore").split("\n")
+        .map(e => e.split("#", 1)[0].trim()).filter(e => e !== "")
+        .map(e => `!${e}`))
     },
     yamllint: {
       options: {
