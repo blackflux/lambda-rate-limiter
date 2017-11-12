@@ -1,4 +1,9 @@
 module.exports = (grunt) => {
+  const loadConfig = name => grunt.file
+    .read(name).split("\n")
+    .map(e => e.split("#", 1)[0].trim())
+    .filter(e => e !== "");
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     projectUpdate: {
@@ -19,9 +24,7 @@ module.exports = (grunt) => {
       },
       target: [
         '**'
-      ].concat(grunt.file.read(".eslintignore").split("\n")
-        .map(e => e.split("#", 1)[0].trim()).filter(e => e !== "")
-        .map(e => `!${e}`))
+      ].concat(loadConfig(".eslintignore").map(e => `!${e}`))
     },
     yamllint: {
       options: {
@@ -43,8 +46,7 @@ module.exports = (grunt) => {
         failOnMissingDeps: true,
         listMissing: true,
         ignoreDirs: ['.git', '.svn', '.hg', '.idea', 'node_modules', 'bower_components'],
-        ignoreMatches: grunt.file.read(".depunusedignore").split("\n")
-          .map(e => e.split("#", 1)[0].trim()).filter(e => e !== "")
+        ignoreMatches: loadConfig(".depunusedignore")
       },
       this: [
         '.'
@@ -73,8 +75,7 @@ module.exports = (grunt) => {
             branches: 100,
             functions: 100
           },
-          excludes: grunt.file.read(".coverignore").split("\n")
-            .map(e => e.split("#", 1)[0].trim()).filter(e => e !== ""),
+          excludes: loadConfig(".coverignore"),
           mochaOptions: ['--sort'],
           istanbulOptions: ['--include-all-sources', '--default-excludes=false'],
           root: './'
