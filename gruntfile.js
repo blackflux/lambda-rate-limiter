@@ -22,7 +22,7 @@ module.exports = (grunt) => {
         rulePaths: ['conf/rules'],
         maxWarnings: 0
       },
-      target: [
+      this: [
         '**'
       ].concat(loadConfig(".eslintignore").map(e => `!${e}`))
     },
@@ -30,7 +30,7 @@ module.exports = (grunt) => {
       options: {
         schema: 'DEFAULT_SAFE_SCHEMA'
       },
-      all: grunt.file.expand([
+      this: grunt.file.expand([
         '**/*.yml',
         '**/*.yaml',
         '**/.*.yml',
