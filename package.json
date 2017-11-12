@@ -44,6 +44,7 @@
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-mocha": "4.11.0",
     "grunt": "1.0.1",
+    "grunt-check-dependencies": "1.0.0",
     "grunt-depcheck": "0.1.3",
     "grunt-eslint": "20.1.0",
     "grunt-mocha-istanbul": "5.0.2",

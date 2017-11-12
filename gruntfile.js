@@ -39,12 +39,23 @@ module.exports = (grunt) => {
           'mocha'
         ]
       },
-      target: [
+      this: [
         '.'
       ]
     },
+    checkDependencies: {
+      this: {
+        options: {
+          packageManager: 'npm',
+          packageDir: '.',
+          onlySpecified: false,
+          install: false,
+          continueAfterInstall: false
+        }
+      }
+    },
     mocha_istanbul: {
-      coverage: {
+      this: {
         src: [
           'tests/*.js'
         ],
@@ -72,7 +83,8 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-yamllint');
   grunt.loadNpmTasks('grunt-depcheck');
+  grunt.loadNpmTasks('grunt-check-dependencies');
   grunt.loadNpmTasks('grunt-mocha-istanbul');
 
-  grunt.registerTask('test', ['eslint', 'yamllint', 'depcheck:target', 'mocha_istanbul:coverage']);
+  grunt.registerTask('test', ['eslint', 'yamllint', 'depcheck', 'checkDependencies', 'mocha_istanbul']);
 };
