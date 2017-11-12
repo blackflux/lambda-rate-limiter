@@ -36,8 +36,7 @@ module.exports = (grunt) => {
           'eslint-plugin-json',
           'eslint-plugin-mocha',
           'istanbul',
-          'mocha',
-          'mocha-lcov-reporter'
+          'mocha'
         ]
       },
       target: [
