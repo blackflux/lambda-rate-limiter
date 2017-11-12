@@ -1,6 +1,6 @@
 module.exports = (grunt) => {
   const loadConfig = name => grunt.file
-    .read(name).split("\n")
+    .read(`conf/${name}`).split("\n")
     .map(e => e.split("#", 1)[0].trim())
     .filter(e => e !== "");
 
