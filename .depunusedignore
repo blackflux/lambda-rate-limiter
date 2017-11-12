@@ -1,0 +1,8 @@
+babel-eslint
+eslint-config-airbnb-base
+eslint-plugin-import  # used by airbnb
+eslint-plugin-jasmine
+eslint-plugin-json
+eslint-plugin-mocha
+istanbul
+mocha

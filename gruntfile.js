@@ -43,16 +43,8 @@ module.exports = (grunt) => {
         failOnMissingDeps: true,
         listMissing: true,
         ignoreDirs: ['.git', '.svn', '.hg', '.idea', 'node_modules', 'bower_components'],
-        ignoreMatches: [
-          'babel-eslint',
-          'eslint-config-airbnb-base',
-          'eslint-plugin-import', // used by airbnb
-          'eslint-plugin-jasmine',
-          'eslint-plugin-json',
-          'eslint-plugin-mocha',
-          'istanbul',
-          'mocha'
-        ]
+        ignoreMatches: grunt.file.read(".depunusedignore").split("\n")
+          .map(e => e.split("#", 1)[0].trim()).filter(e => e !== "")
       },
       this: [
         '.'
