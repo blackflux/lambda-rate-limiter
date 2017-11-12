@@ -27,8 +27,14 @@ module.exports = (grunt) => {
       options: {
         schema: 'DEFAULT_SAFE_SCHEMA'
       },
-      all: grunt.file.expand(['**/*.yml', '**/*.yaml', '**/.*.yml', '**/.*.yaml'])
-        .filter(m => !m.startsWith("node_modules"))
+      all: grunt.file.expand([
+        '**/*.yml',
+        '**/*.yaml',
+        '**/.*.yml',
+        '**/.*.yaml',
+        '!**/node_modules/**/.*',
+        '!**/node_modules/**'
+      ])
     },
     depcheck: {
       options: {
