@@ -1,5 +1,6 @@
 conf/
 coverage/
 tests/
+.coveralls.yml
 .travis.yml
 gruntfile.js
