@@ -1,7 +1,7 @@
 .idea/
 conf/
 coverage/
-tests/
+test/
 .coveralls.yml
 .travis.yml
 gruntfile.js
