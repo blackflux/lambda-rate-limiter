@@ -1,4 +1,4 @@
-[![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/lambda-rate-limiter)# lambda-rate-limiter
+# lambda-rate-limiter
 
 [![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter)
 [![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master)
@@ -6,7 +6,7 @@
 [![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
 [![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
 [![Semantic-Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Gardener](https://github.com/simlu/grunt-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/lambda-rate-limiter)
+[![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/lambda-rate-limiter)
 [![Gitter](https://img.shields.io/gitter/room/simlu/lambda-rate-limiter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
 
 Fast and efficient in-memory rate-limiter. No centralized storage (see below for reasoning).
