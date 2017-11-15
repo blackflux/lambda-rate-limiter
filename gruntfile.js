@@ -6,5 +6,5 @@ module.exports = (grunt) => {
     }
   });
 
-  grunt.loadNpmTasks('grunt-gardener');
+  grunt.loadNpmTasks('js-gardener');
 };

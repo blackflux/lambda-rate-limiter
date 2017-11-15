@@ -1,4 +1,4 @@
-# lambda-rate-limiter
+[![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/lambda-rate-limiter)# lambda-rate-limiter
 
 [![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter)
 [![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master)
