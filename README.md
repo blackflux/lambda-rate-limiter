@@ -6,9 +6,9 @@
 [![Dependencies](https://david-dm.org/simlu/lambda-rate-limiter/status.svg)](https://david-dm.org/simlu/lambda-rate-limiter)
 [![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
 [![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
-[![Semantic-Release](https://github.com/simlu/js-gardener/blob/master/assets/semver/badge.svg)](https://github.com/semantic-release/semantic-release)
+[![Semantic-Release](https://github.com/simlu/js-gardener/blob/master/assets/icons/semver.svg)](https://github.com/semantic-release/semantic-release)
 [![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/js-gardener)
-[![Gitter](https://img.shields.io/gitter/room/simlu/lambda-rate-limiter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
+[![Gitter](https://github.com/simlu/js-gardener/blob/master/assets/icons/gitter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
 
 Fast and efficient in-memory rate-limiter. No centralized storage (see below for reasoning).
 
