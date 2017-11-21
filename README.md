@@ -24,26 +24,24 @@ Run
 
 ## How to use?
 
-To initialize
+To initialize and check against limit use
+<!-- eslint-disable import/no-extraneous-dependencies, import/no-unresolved -->
 ```javascript
 const limiter = require("lambda-rate-limiter")({
-  interval: 60000,  // rate limit interval in ms, starts on first request
-  uniqueTokenPerInterval: 500  // excess causes earliest seen to drop, per instantiation
+  interval: 60000, // rate limit interval in ms, starts on first request
+  uniqueTokenPerInterval: 500 // excess causes earliest seen to drop, per instantiation
 });
-```
 
-To check for limit use
-```javascript
 limiter
-    .check(10, token) // define maximum of 10 requests per interval
-    .catch(() => {
-      // rate limit exceeded: 429
-    })
-    .then(() => {
-      // ok
-    });
+  .check(10, "USER_TOKEN") // define maximum of 10 requests per interval
+  .catch(() => {
+    // rate limit exceeded: 429
+  })
+  .then(() => {
+    // ok
+  });
 ```
-where `token` could be the user ip or login.
+where `USER_TOKEN` could be the user ip or login.
 
 ## Why not using existing similar modules?
 
