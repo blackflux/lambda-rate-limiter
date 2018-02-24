@@ -56,5 +56,6 @@
   ],
   "files": [
     "lib"
-  ]
+  ],
+  "peerDependencies": {}
 }
