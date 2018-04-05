@@ -4,4 +4,4 @@ coverage/
 test/
 .coveralls.yml
 .travis.yml
-gruntfile.js
+gardener.js
