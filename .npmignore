@@ -5,3 +5,4 @@ test/
 .coveralls.yml
 .travis.yml
 gardener.js
+src/

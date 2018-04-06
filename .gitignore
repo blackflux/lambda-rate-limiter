@@ -13,3 +13,4 @@ npm-debug.log
 # Test Specific
 coverage/
 .coveralls.yml
+lib/
