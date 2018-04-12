@@ -1,3 +1,8 @@
 {
-  "presets": ["flow"]
+  "presets": [
+    "flow"
+  ],
+  "plugins": [
+    "transform-flow-comments"
+  ]
 }
