@@ -29,11 +29,11 @@
   "scripts": {
     "test": "npm run clean && npm run gardener && npm run test-simple",
     "coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
-    "semantic-release": "npm run clean-build && semantic-release",
+    "semantic-release": "npm run clean-build && npx semantic-release",
     "clean": "rm -rf lib",
     "build": "npx babel src --out-dir lib --source-maps inline --copy-files --include-dotfiles",
     "clean-build": "npm run clean && npm run build",
-    "test-simple": "nyc mocha --recursive",
+    "test-simple": "nyc mocha \"./test/**/*.spec.js\"",
     "gardener": "node gardener"
   },
   "dependencies": {
@@ -43,8 +43,8 @@
     "chai": "4.1.2",
     "coveralls": "3.0.0",
     "grunt": "1.0.2",
-    "js-gardener": "1.16.0",
-    "mocha": "5.0.5",
+    "js-gardener": "1.21.1",
+    "mocha": "5.1.0",
     "semantic-release": "15.1.7",
     "nyc": "11.6.0",
     "babel-cli": "7.0.0-beta.3"

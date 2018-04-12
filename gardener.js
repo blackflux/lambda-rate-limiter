@@ -2,5 +2,5 @@
 const gardener = require('js-gardener');
 
 if (require.main === module) {
-  gardener().catch(() => process.exit(1));
+  gardener({ eslint: { rules: { "flow-enforce": 0 } } }).catch(() => process.exit(1));
 }

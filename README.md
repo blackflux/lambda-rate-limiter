@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter)
 [![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/simlu/lambda-rate-limiter.svg)](https://greenkeeper.io/)
+[![Greenkeeper Badge](https://badges.greenkeeper.io/simlu/lambda-rate-limiter.svg)](https://greenkeeper.io/)
 [![Dependencies](https://david-dm.org/simlu/lambda-rate-limiter/status.svg)](https://david-dm.org/simlu/lambda-rate-limiter)
 [![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
 [![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
