@@ -43,7 +43,7 @@
     "chai": "4.1.2",
     "coveralls": "3.0.0",
     "grunt": "1.0.2",
-    "js-gardener": "1.22.3",
+    "js-gardener": "1.22.4",
     "mocha": "5.1.0",
     "semantic-release": "15.1.7",
     "nyc": "11.6.0",
