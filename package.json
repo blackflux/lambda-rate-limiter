@@ -45,7 +45,7 @@
     "grunt": "1.0.3",
     "js-gardener": "1.22.11",
     "mocha": "5.2.0",
-    "semantic-release": "15.5.1",
+    "semantic-release": "15.5.2",
     "nyc": "11.7.1",
     "babel-cli": "7.0.0-beta.3"
   },
