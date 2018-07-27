@@ -8,3 +8,4 @@ gardener.js
 src/
 .circleci/config.yml
 .releaserc.json
+release.tar.gz
