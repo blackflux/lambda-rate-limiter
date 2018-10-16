@@ -43,7 +43,7 @@
     "js-gardener": "1.30.3",
     "mocha": "5.2.0",
     "semantic-release": "15.8.1",
-    "nyc": "12.0.2",
+    "nyc": "13.1.0",
     "babel-cli": "7.0.0-beta.3",
     "babel-register": "7.0.0-beta.3",
     "babel-eslint": "8.2.6",
