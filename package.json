@@ -34,7 +34,7 @@
     "build-artifact": "npm run clean-build && tar -zxvf $(npm pack) && rm *-0.0.0-development.tgz && cd package && tar -zcvf ../release.tar.gz . && cd .. && rm -rf package"
   },
   "dependencies": {
-    "lru-cache": "4.1.3"
+    "lru-cache": "5.1.1"
   },
   "devDependencies": {
     "chai": "4.1.2",
