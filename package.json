@@ -2,20 +2,20 @@
   "name": "lambda-rate-limiter",
   "description": "Simple in-memory rate-limit for Node.",
   "version": "0.0.0-development",
-  "homepage": "https://github.com/simlu/lambda-rate-limiter",
+  "homepage": "https://github.com/blackflux/lambda-rate-limiter",
   "license": "MIT",
   "author": "Lukas Siemon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simlu/lambda-rate-limiter.git"
+    "url": "https://github.com/blackflux/lambda-rate-limiter.git"
   },
   "bugs": {
-    "url": "https://github.com/simlu/lambda-rate-limiter/issues"
+    "url": "https://github.com/blackflux/lambda-rate-limiter/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/simlu/lambda-rate-limiter/blob/master/LICENSE"
+      "url": "https://github.com/blackflux/lambda-rate-limiter/blob/master/LICENSE"
     }
   ],
   "main": "lib/limiter",
@@ -34,21 +34,23 @@
     "build-artifact": "npm run clean-build && tar -zxvf $(npm pack) && rm *-0.0.0-development.tgz && cd package && tar -zcvf ../release.tar.gz . && cd .. && rm -rf package"
   },
   "dependencies": {
-    "lru-cache": "4.1.3"
+    "lru-cache": "5.1.1"
   },
   "devDependencies": {
-    "chai": "4.1.2",
+    "chai": "4.2.0",
     "coveralls": "3.0.2",
     "grunt": "1.0.3",
-    "js-gardener": "1.30.3",
+    "js-gardener": "1.34.2",
     "mocha": "5.2.0",
-    "semantic-release": "15.8.1",
-    "nyc": "12.0.2",
-    "babel-cli": "7.0.0-beta.3",
-    "babel-register": "7.0.0-beta.3",
-    "babel-eslint": "8.2.6",
-    "babel-plugin-transform-flow-comments": "7.0.0-beta.3",
-    "babel-preset-flow": "7.0.0-beta.3"
+    "semantic-release": "15.13.3",
+    "nyc": "13.3.0",
+    "babel-eslint": "10.0.1",
+    "@babel/register": "7.0.0",
+    "@babel/core": "7.3.3",
+    "@babel/cli": "7.2.3",
+    "@babel/plugin-transform-flow-comments": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.3.2",
+    "@babel/preset-flow": "7.0.0"
   },
   "keywords": [
     "ratelimit",
@@ -67,7 +69,7 @@
   ],
   "peerDependencies": {},
   "nyc": {
-    "tempDirectory": "./coverage/.nyc_output",
+    "tempDir": "./coverage/.nyc_output",
     "report-dir": "./coverage",
     "check-coverage": true,
     "per-file": false,
@@ -90,7 +92,7 @@
       "text-summary"
     ],
     "require": [
-      "babel-register"
+      "@babel/register"
     ],
     "extension": [],
     "cache": true,

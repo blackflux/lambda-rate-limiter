@@ -1,13 +1,13 @@
 # lambda-rate-limiter
 
-[![Build Status](https://img.shields.io/travis/simlu/lambda-rate-limiter/master.svg)](https://travis-ci.org/simlu/lambda-rate-limiter)
-[![Test Coverage](https://img.shields.io/coveralls/simlu/lambda-rate-limiter/master.svg)](https://coveralls.io/github/simlu/lambda-rate-limiter?branch=master)
-[![Dependencies](https://david-dm.org/simlu/lambda-rate-limiter/status.svg)](https://david-dm.org/simlu/lambda-rate-limiter)
+[![Build Status](https://circleci.com/gh/blackflux/lambda-rate-limiter.png?style=shield)](https://circleci.com/gh/blackflux/lambda-rate-limiter)
+[![Test Coverage](https://img.shields.io/coveralls/blackflux/lambda-rate-limiter/master.svg)](https://coveralls.io/github/blackflux/lambda-rate-limiter?branch=master)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=blackflux/lambda-rate-limiter)](https://dependabot.com)
+[![Dependencies](https://david-dm.org/blackflux/lambda-rate-limiter/status.svg)](https://david-dm.org/blackflux/lambda-rate-limiter)
 [![NPM](https://img.shields.io/npm/v/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
 [![Downloads](https://img.shields.io/npm/dt/lambda-rate-limiter.svg)](https://www.npmjs.com/package/lambda-rate-limiter)
-[![Semantic-Release](https://github.com/simlu/js-gardener/blob/master/assets/icons/semver.svg)](https://github.com/semantic-release/semantic-release)
-[![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/js-gardener)
-[![Gitter](https://github.com/simlu/js-gardener/blob/master/assets/icons/gitter.svg)](https://gitter.im/simlu/lambda-rate-limiter)
+[![Semantic-Release](https://github.com/blackflux/js-gardener/blob/master/assets/icons/semver.svg)](https://github.com/semantic-release/semantic-release)
+[![Gardener](https://github.com/blackflux/js-gardener/blob/master/assets/badge.svg)](https://github.com/blackflux/js-gardener)
 
 Fast and efficient in-memory rate-limiter. No centralized storage (see below for reasoning).
 
@@ -26,13 +26,13 @@ Run
 To initialize and check against limit use
 <!-- eslint-disable import/no-extraneous-dependencies, import/no-unresolved -->
 ```javascript
-const limiter = require("lambda-rate-limiter")({
+const limiter = require('lambda-rate-limiter')({
   interval: 60000, // rate limit interval in ms, starts on first request
   uniqueTokenPerInterval: 500 // excess causes earliest seen to drop, per instantiation
 });
 
 limiter
-  .check(10, "USER_TOKEN") // define maximum of 10 requests per interval
+  .check(10, 'USER_TOKEN') // define maximum of 10 requests per interval
   .catch(() => {
     // rate limit exceeded: 429
   })
