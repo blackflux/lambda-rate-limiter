@@ -1,4 +1,4 @@
-const LRU = require("lru-cache");
+const LRU = require('lru-cache');
 
 module.exports = (options) => {
   const tokenCache = new LRU({
