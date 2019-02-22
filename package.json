@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "coveralls": "3.0.2",
+    "coveralls": "3.0.3",
     "grunt": "1.0.3",
     "js-gardener": "1.37.3",
     "mocha": "6.0.1",
