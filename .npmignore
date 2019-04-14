@@ -1,11 +1,7 @@
-.idea/
-conf/
-coverage/
-test/
-.coveralls.yml
-.travis.yml
-gardener.js
-src/
-.circleci/config.yml
-.releaserc.json
-release.tar.gz
+# Do not rely on blacklisting only, use whitelisting instead.
+# Here is how: http://tiny.cc/oeg03y
+
+# ----------------------------------------
+# ----------------------------------------
+# ----------------------------------------
+
