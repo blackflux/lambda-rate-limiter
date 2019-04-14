@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const limiter = require('../src/limiter')({});
+const limiter = require('../src/index')({});
 
 describe('Testing Limiter', () => {
   it('Testing Limit Restricts', (done) => {
