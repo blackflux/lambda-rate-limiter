@@ -168,12 +168,12 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@blackflux/eslint-plugin-rules@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.0.4.tgz#b8c97c9add0a9dd11860b2ea900305bfc69e317e"
-  integrity sha512-TtH5/11HCpSsRv8jpPAZoQpg5J22KYj+JTG4GY5/PdqqC28rOiCYxSIRyKls7IYH9hkX1JnFOBFggU7sMk+oZA==
+"@blackflux/eslint-plugin-rules@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.0.5.tgz#380a811272cbce6ce314c4696c7219e98503e73f"
+  integrity sha512-PUH0ZJ63ga2bku4XEpk2g43IYkHgDv+iYO46yNP7vsyEIGiBB+xMjP+NqMC8hx1tUmxM99lTACDjbqcZUDnoZQ==
   dependencies:
-    smart-fs "1.6.2"
+    smart-fs "1.7.0"
 
 "@blackflux/robo-config-plugin@1.7.4":
   version "1.7.4"
@@ -6209,17 +6209,6 @@ smart-buffer@^1.0.13:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-1.1.15.tgz#7f114b5b65fab3e2a35aa775bb12f0d1c649bf16"
   integrity sha1-fxFLW2X6s+KjWqd1uxLw0cZJvxY=
 
-smart-fs@1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.6.2.tgz#df77ee37aae60ef4904a3d618f2426dfd9459b32"
-  integrity sha512-xV1PrwCRtdT5JCWw5kBXe+i9cTTBI8c1LrIaIqMUBdcZdkX2mtx40GVE+laHbVMvOVobE9gksDtb0SGZaUGy1w==
-  dependencies:
-    fs-extra "7.0.1"
-    lodash.clonedeep "4.5.0"
-    lodash.isequal "4.5.0"
-    xml-js "1.6.11"
-    yaml-boost "1.9.1"
-
 smart-fs@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.7.0.tgz#1070582f97e62b0ce5f7799f01c504165cddc97e"
@@ -7289,16 +7278,6 @@ yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.3.tgz#b4b049e314be545e3ce802236d6cd22cd91c3de9"
   integrity sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
-
-yaml-boost@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.1.tgz#d74cafcaeb782375988f671fe56ea594725ba3d3"
-  integrity sha512-prfw7xkd8c6EVABd32EaYm24eUAIv2AOUJuetg+5d9377MrAIP5CXRYsFWfK/4AoLtsTm/FicLDuez/X3tDzNA==
-  dependencies:
-    js-yaml "3.13.1"
-    lodash.get "4.4.2"
-    lodash.mergewith "4.6.1"
-    lodash.set "4.3.2"
 
 yaml-boost@1.9.2:
   version "1.9.2"
