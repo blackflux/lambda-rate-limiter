@@ -50,7 +50,7 @@
     "js-gardener": "2.0.40",
     "mocha": "6.1.4",
     "nyc": "14.1.1",
-    "semantic-release": "15.13.17"
+    "semantic-release": "15.13.18"
   },
   "keywords": [
     "ratelimit",
