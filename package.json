@@ -47,7 +47,7 @@
     "coveralls": "3.0.5",
     "eslint": "6.1.0",
     "grunt": "1.0.4",
-    "js-gardener": "2.0.52",
+    "js-gardener": "2.0.53",
     "mocha": "6.2.0",
     "nyc": "14.1.1",
     "semantic-release": "15.13.18"
