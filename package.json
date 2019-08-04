@@ -9,7 +9,9 @@
     "type": "git",
     "url": "https://github.com/blackflux/lambda-rate-limiter.git"
   },
-  "bugs": {"url": "https://github.com/blackflux/lambda-rate-limiter/issues"},
+  "bugs": {
+    "url": "https://github.com/blackflux/lambda-rate-limiter/issues"
+  },
   "licenses": [
     {
       "type": "MIT",
@@ -17,7 +19,9 @@
     }
   ],
   "main": "lib/index.js",
-  "engines": {"node": ">= 6.10.3"},
+  "engines": {
+    "node": ">= 6.10.3"
+  },
   "scripts": {
     "clean": "rm -rf lib",
     "build": "npx babel src --out-dir lib --copy-files --include-dotfiles --config-file ./.babelrc",
@@ -34,14 +38,16 @@
     "ts": "yarn run test-simple",
     "tsv": "yarn run test-simple --verbose"
   },
-  "dependencies": {"lru-cache": "5.1.1"},
+  "dependencies": {
+    "lru-cache": "5.1.1"
+  },
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@babel/register": "7.5.5",
     "@blackflux/eslint-plugin-rules": "1.1.0",
-    "@blackflux/robo-config-plugin": "2.2.3",
+    "@blackflux/robo-config-plugin": "2.3.0",
     "babel-eslint": "10.0.2",
     "chai": "4.2.0",
     "coveralls": "3.0.5",
@@ -63,7 +69,9 @@
     "ddos",
     "lambda"
   ],
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {},
   "nyc": {
     "tempDir": "./coverage/.nyc_output",
@@ -74,10 +82,22 @@
     "statements": 100,
     "functions": 100,
     "branches": 100,
-    "include": ["**/*.js"],
-    "exclude": ["gardener.js", "node_modules/*", "coverage/*", "lib/*"],
-    "reporter": ["lcov", "text-summary"],
-    "require": ["@babel/register"],
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "gardener.js",
+      "node_modules/*",
+      "coverage/*",
+      "lib/*"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "require": [
+      "@babel/register"
+    ],
     "extension": [],
     "cache": true,
     "all": true,
