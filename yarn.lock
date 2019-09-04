@@ -3563,10 +3563,10 @@ joi-strict@1.0.9:
   resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.0.9.tgz#9b05887cbf7160e5bff6bd9a901ce0f6af42f57c"
   integrity sha512-fxky2GApiaabDQ+Itq2T5QPn7y+qpHesSHH1YcA4R81S+/zlvpweiLxbfUEP871SNS9XR+/x5XymwHSMkfbNOg==
 
-js-gardener@2.0.81:
-  version "2.0.81"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.81.tgz#103e29e787284b3c0eeb12372dd0c1af892f9e20"
-  integrity sha512-63IrOnO52ogawNNobc+YC2Z0JF7qL/EKeeSAjFB5WkXZJ7bDTfi0YUsDYZH67alOXqJuIlKcZwrZIEq06wmHAA==
+js-gardener@2.0.82:
+  version "2.0.82"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.82.tgz#366d7413898988cba8e4825c80f6bfe14abd6801"
+  integrity sha512-FXbo5MZ7fXuwUFMlcHNBLyl7yEf7ZbvuEAoCToPt9wNavHaQRipG0CHbceNBvA/6CFd40lLsMy+IbRnwhEBzpg==
   dependencies:
     "@hapi/joi" "15.1.1"
     chalk "2.4.2"
@@ -3578,7 +3578,7 @@ js-gardener@2.0.81:
     lodash.get "4.4.2"
     mocha "6.2.0"
     npm-check "5.9.0"
-    robo-config "3.3.2"
+    robo-config "3.3.3"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -4992,10 +4992,10 @@ object-scan@10.0.10:
   resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-10.0.10.tgz#cdce237111f29867f5ed006abf340ce4224ba4cd"
   integrity sha512-6BJQ2MhdumFdttDUAu2TN7zNPlquVDi9iix0CziLCa5QnKrlAu6Puc7Pw2/3lnEezeJ+3HZMkp9/F6K/zZjChw==
 
-object-treeify@1.1.18:
-  version "1.1.18"
-  resolved "https://registry.yarnpkg.com/object-treeify/-/object-treeify-1.1.18.tgz#568a1e917579f9158270dfefae65047c3a9b5717"
-  integrity sha512-x6vSb0QZZ8OFIjYwnL3BMvJaCK4AK/Y8oZApaF9hKBtroR6X70w4Y1ceyoP/vOHlDpqC15Hu2gq44EtDvJhkyg==
+object-treeify@1.1.19:
+  version "1.1.19"
+  resolved "https://registry.yarnpkg.com/object-treeify/-/object-treeify-1.1.19.tgz#5987fae7218c2ff0bac547ed632fa23571cc8866"
+  integrity sha512-I1RwSZyxXhgfm3+RYmBSZWozLHe1UuGn6dwW3Ppz3Iub5xzNs0TArp7UgPER22o914EIOcRfCQokRM9MLZGOOQ==
 
 object-visit@^1.0.0:
   version "1.0.1"
@@ -6145,10 +6145,10 @@ rimraf@2.6.3:
   dependencies:
     glob "^7.1.3"
 
-robo-config@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-3.3.2.tgz#a8a5493ddb1ad07207ee0c7b5210edeeedab845e"
-  integrity sha512-6+uSddS8YGbf4lUgsrWbb9St2jbLLRGxgSHElsjqmPRLiR8Bk+xWUZspKzZCrUWMk9ao+VyRKIXkNBcJZnEArA==
+robo-config@3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-3.3.3.tgz#868c984423ff1b95be304ba73b0ac0a0b3362ff0"
+  integrity sha512-gkNBp/lZcC9i8KgmBf/ECG8rBt7OvSdBDmnELSb6fC1yIOHTcL/bUaN00oAUzmGxjA+Bl2Zrq2QDcGHlP96nnA==
   dependencies:
     "@hapi/joi" "15.1.1"
     app-root-path "2.2.1"
@@ -6159,7 +6159,7 @@ robo-config@3.3.2:
     lodash.get "4.4.2"
     object-deep-contain "1.0.18"
     object-scan "10.0.10"
-    object-treeify "1.1.18"
+    object-treeify "1.1.19"
     smart-fs "1.9.10"
 
 run-async@^0.1.0:
