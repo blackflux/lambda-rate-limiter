@@ -2000,10 +2000,10 @@ eslint-plugin-import@2.18.2:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-json@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-json/-/eslint-plugin-json-2.0.0.tgz#1da8dfc92a0a4fd3cbb6acc5d7ce1891ccf20306"
-  integrity sha512-FvLllOBtyj5TfnpKqNEg7Lnk1PG6QuqJIqJ5bOJw3/DDfv6X8XFCxleRQJGULItBGgJ14Lc//M5uN1apVactjA==
+eslint-plugin-json@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-json/-/eslint-plugin-json-2.0.1.tgz#825ba21fed9522a7080044f0692ffffffbc237e3"
+  integrity sha512-IxKZIlMyBn0tvxlBj2viW0N/UBuoey1oYpV+SNVuNFmy4xsNuwgeoOjzEeFDnVXL0FpIo7UbQSeZ+lfh2D/nLQ==
   dependencies:
     lodash "^4.17.15"
     vscode-json-languageservice "^3.3.5"
