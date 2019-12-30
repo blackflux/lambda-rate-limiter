@@ -3738,15 +3738,22 @@ joi-strict@1.1.10:
   dependencies:
     "@hapi/joi" "16.1.8"
 
-js-gardener@2.0.125:
-  version "2.0.125"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.125.tgz#589571c1f41215a4c995c7125f079841c960b929"
-  integrity sha512-zhbrmTOOXviPVH+piCw1oxYj6ro+ueLr5AWhH1RlfrmviA3iAnxR2byX7uvmpRg7iNkRqOOPMk+MmyWTY7XmtQ==
+joi-strict@1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.1.11.tgz#4a08c14772f10f1ef06ec1a9dbabc1b8aedc5753"
+  integrity sha512-CxN0zLwlKPVjWFFDTvAv8rdmjdsFhAkWNCM1kYMqVwG3zCWG+akyO6bufMA4ovKsm9IYaOklTGi+OKLj3mHg5w==
+  dependencies:
+    "@hapi/joi" "16.1.8"
+
+js-gardener@2.0.126:
+  version "2.0.126"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.126.tgz#dc0e01417b933dcf8ac7fbe5924dee6f8cd2ec46"
+  integrity sha512-SKu1eNKga4Rr7zZXsTnS9M0o00lWNFCWkUaeyNlEgjNs2/71DfB537NrzKAZXp1gJ7VsD4XyKta0IflsLzqCMA==
   dependencies:
     chalk "3.0.0"
     fancy-log "1.3.3"
     glob "7.1.6"
-    joi-strict "1.1.10"
+    joi-strict "1.1.11"
     js-yaml "3.13.1"
     lodash.difference "4.5.0"
     lodash.get "4.4.2"
