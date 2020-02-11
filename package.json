@@ -57,7 +57,7 @@
     "eslint-plugin-json": "2.0.1",
     "eslint-plugin-markdown": "1.0.1",
     "eslint-plugin-mocha": "6.2.2",
-    "js-gardener": "2.0.132",
+    "js-gardener": "2.0.133",
     "mocha": "7.0.1",
     "nyc": "15.0.0",
     "semantic-release": "17.0.2"
