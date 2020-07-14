@@ -42,7 +42,7 @@
     "lru-cache": "6.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.4",
+    "@babel/cli": "7.10.5",
     "@babel/core": "7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "7.10.4",
     "@babel/register": "7.10.5",
