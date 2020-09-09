@@ -309,12 +309,12 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@blackflux/eslint-plugin-rules@1.3.34":
-  version "1.3.34"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.34.tgz#af261056050d95831bc4be013edc4995e5beada3"
-  integrity sha512-ZeWKTwqvNmD5Yg7xtsEYc8/xzZ5uX0FHGn8/bgsaX85pPTl2MVp2LAU4UQ3kR0vfYX8B4I4S3bDd5rGYgdN7gQ==
+"@blackflux/eslint-plugin-rules@1.3.35":
+  version "1.3.35"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.35.tgz#dd1211df2c4a88e86b30b2a7a222778e3f7bea10"
+  integrity sha512-VR+cs6qaS3qmhoXW4os8EjEj3PI6ufT0sWUTkwaFDgOqvbKeHBDCQhIXzCFKsjjtftcAWuDiOBkC3Q6q8GfoVg==
   dependencies:
-    smart-fs "1.11.16"
+    smart-fs "1.11.17"
 
 "@blackflux/robo-config-plugin@3.9.9":
   version "3.9.9"
@@ -3944,10 +3944,10 @@ joi-strict@1.2.3:
   dependencies:
     "@hapi/joi" "17.1.1"
 
-js-gardener@2.0.168:
-  version "2.0.168"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.168.tgz#1d81c7aecc811c307b0ab7f4f032d82993f6e122"
-  integrity sha512-8tJHJX1qsuwnH4VjcyVAooQMfwl/HshfKzxNoIfR0CpgfHlWWOkXxjVTG/pS6cucPtmxPTgmOj6jz7JQQdgSYw==
+js-gardener@2.0.169:
+  version "2.0.169"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.169.tgz#bc95e81f25ed8a150d0ff5ec176e7d286c7196bc"
+  integrity sha512-iql2irv7O/JU6H2upNVI1HbRba/CUe/GiB/jK2ltmV04mxfzVWzyveVZbq2eFChnUwGfzhTu0ZDU12MDDr4+rA==
   dependencies:
     chalk "4.1.0"
     fancy-log "1.3.3"
@@ -3958,7 +3958,7 @@ js-gardener@2.0.168:
     lodash.get "4.4.2"
     mocha "8.1.3"
     npm-check "5.9.2"
-    robo-config "3.8.6"
+    robo-config "3.8.7"
 
 js-tokens@^3.0.0:
   version "3.0.2"
@@ -5346,10 +5346,10 @@ object-keys@^1.0.11, object-keys@^1.0.12, object-keys@^1.1.1:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
-object-scan@13.1.2:
-  version "13.1.2"
-  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.1.2.tgz#d190cdfd8821b6496afd2305568c5e7aaa539e24"
-  integrity sha512-MurZBgumqnz1rM+cQ/3lGM33Mr+MXTvGUg3H1Ylcad4Q71XbBmsFKcqWq6lFc+70W1t3xCsTWYrXT/doZt9LeA==
+object-scan@13.1.4:
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.1.4.tgz#dab76506cef35300ab744cfce5ecf27ad0734de0"
+  integrity sha512-pwc5F73RyduRMz/C+JvEllvV5nPhYj86vpdIykUnsEY6PI5gpRWuilSP3K0qhAxOyTryW6ZW2pHhweb+6ojThA==
 
 object-treeify@1.1.26:
   version "1.1.26"
@@ -6513,10 +6513,10 @@ rimraf@^3.0.0:
   dependencies:
     glob "^7.1.3"
 
-robo-config@3.8.6:
-  version "3.8.6"
-  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-3.8.6.tgz#994d8f2e2024c73591f3f766b1445e8562c39382"
-  integrity sha512-ucreSd4pdWDMSGN6loCcpn9FsHvy6wLblY56UcHZo5jdsXL5AFiRX5ntAAs3elpuP9GqV4p1rIX2zEFrUz2lUg==
+robo-config@3.8.7:
+  version "3.8.7"
+  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-3.8.7.tgz#7323e7c772fe156424e3c99ff645634fd9a7ff5b"
+  integrity sha512-YiRT9yErvM6ySO6GlCV39sTsY1kL0a6R52pAs6HYM4LwbYQe6yORBVNWvHq1rI8t20LURoEpICzHkOaThh/5xQ==
   dependencies:
     app-root-path "3.0.0"
     deepmerge "4.2.2"
@@ -6525,7 +6525,7 @@ robo-config@3.8.6:
     lodash.difference "4.5.0"
     lodash.get "4.4.2"
     object-deep-contain "1.0.25"
-    object-scan "13.1.2"
+    object-scan "13.1.4"
     object-treeify "1.1.26"
     smart-fs "1.11.16"
 
@@ -6753,6 +6753,20 @@ smart-fs@1.11.16:
   version "1.11.16"
   resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.16.tgz#092b34da10d57f82dbb2d53b0b15eceda7417d9b"
   integrity sha512-1NbCUyNUIMCOr1sQReWNEbs/t27f92wUrp77eZNfqPZKg/XWYHez2LYWFMeCTPRIZXYSsa6bWeiTMsWzTVmgTA==
+  dependencies:
+    fs-extra "9.0.1"
+    js-yaml "3.14.0"
+    json-stringify-pretty-compact "2.0.0"
+    lodash.clonedeep "4.5.0"
+    lodash.isequal "4.5.0"
+    object-align "1.0.12"
+    xml-js "1.6.11"
+    yaml-boost "1.9.23"
+
+smart-fs@1.11.17:
+  version "1.11.17"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.17.tgz#41fe4f45a38a66569023191a164f4c84739e68d9"
+  integrity sha512-MJEEAsAPuy34NztifiYS08Dl/TH7BY9lPnSg8dplofJ8/RbRXgrwWHp2T/rKWhlHEsfH/5fnNUV9hJp/KdcqOg==
   dependencies:
     fs-extra "9.0.1"
     js-yaml "3.14.0"
