@@ -309,12 +309,12 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@blackflux/eslint-plugin-rules@1.3.36":
-  version "1.3.36"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.36.tgz#466a8623735fcd374c94480e7afb10b3faba0c17"
-  integrity sha512-WT9GOGOJiIZHA7qA2htaP8cDcoJLYL+UErhjEYsJ2SaJM+riryumzK3w2VZiUqBZemy0OKGa5w5nCeeenRRobQ==
+"@blackflux/eslint-plugin-rules@1.3.38":
+  version "1.3.38"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.38.tgz#0c36888388b94655818b15e20c203dd8d2a1b17b"
+  integrity sha512-GF15zTQ+3cX4F7NYWWWbchdDaUQl/oszi/cW9aPN/gL+ZQHd+kpEqMopUsaU993qb+dlb2wfeACD4X7gGytoSg==
   dependencies:
-    smart-fs "1.11.18"
+    smart-fs "1.11.19"
 
 "@blackflux/robo-config-plugin@3.10.1":
   version "3.10.1"
@@ -5324,6 +5324,11 @@ object-align@1.0.12:
   resolved "https://registry.yarnpkg.com/object-align/-/object-align-1.0.12.tgz#d7903dd86786b9520a81c2e6792e2dce97f829bd"
   integrity sha512-fBDkdd9LFMD2mNvoRi0cLDmmijhic0KurQcU400NuFj27ye7BdBjPyP5dhjaNjHscepB5PO//qA1cUd73ckvjw==
 
+object-align@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/object-align/-/object-align-1.0.13.tgz#17d2680e047db7d0a4c6f659fa86da9bb925e476"
+  integrity sha512-vqLf2gEwYCReZ2HbLIvLbznfICEM54JMoMGGYc04+l+pewumuz/9ltOqvDtJpQs/Zin/x2UaCOK/XIMtMYL0Hw==
+
 object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -6770,17 +6775,17 @@ smart-fs@1.11.17:
     xml-js "1.6.11"
     yaml-boost "1.9.23"
 
-smart-fs@1.11.18:
-  version "1.11.18"
-  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.18.tgz#9dcc1b20213e56ffa88e1d58d95df0e06d82128e"
-  integrity sha512-ZxMs6WoYC25v0Sxg1CLmLBY5qiRTkr/m/HuFmqvJGe+4J8Vg9O2l0el8m7SqPvn+OgJPsGQqcyrY8Y+QtCVI4Q==
+smart-fs@1.11.19:
+  version "1.11.19"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.19.tgz#82e70b13e4046747333c082797ebb9d14b949266"
+  integrity sha512-ycmO+cNcyV2ddd//njnAv7j4ViazaZY0urivob2OW14xr0ECWAjnqZsnT7G+LsvqjhB4GNyHRDDyjYAdjbgrlw==
   dependencies:
     fs-extra "9.0.1"
     js-yaml "3.14.0"
     json-stringify-pretty-compact "2.0.0"
     lodash.clonedeep "4.5.0"
     lodash.isequal "4.5.0"
-    object-align "1.0.12"
+    object-align "1.0.13"
     xml-js "1.6.11"
     yaml-boost "1.9.24"
 
