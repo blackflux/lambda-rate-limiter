@@ -60,7 +60,7 @@
     "js-gardener": "2.0.177",
     "mocha": "8.2.0",
     "nyc": "15.1.0",
-    "semantic-release": "17.2.1",
+    "semantic-release": "17.2.3",
     "babel-preset-latest-node": "5.0.0"
   },
   "keywords": [
