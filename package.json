@@ -61,7 +61,7 @@
     "mocha": "8.2.1",
     "nyc": "15.1.0",
     "semantic-release": "17.3.0",
-    "babel-preset-latest-node": "5.1.1"
+    "babel-preset-latest-node": "5.2.0"
   },
   "keywords": [
     "ratelimit",
