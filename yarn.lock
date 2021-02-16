@@ -330,10 +330,10 @@
   dependencies:
     smart-fs "1.12.4"
 
-"@blackflux/robo-config-plugin@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-4.0.4.tgz#1c9957f46d0bf04c2a48d1a4a990bccd304059ba"
-  integrity sha512-2z6TNyOtoqo2/wO4EKyAFrOxGfRTkFY+ZR31+2ItJi9L+1mjvybT1GDHS3W4JWPu6j/W92L1o64B2ZvTQJ2P+w==
+"@blackflux/robo-config-plugin@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-4.0.5.tgz#5727c5a287210d525fcbe949b2ae45cd9a0a0732"
+  integrity sha512-vB43FLQj/ztTlUSIAMKsrzRyet5mdLJtBFh0cnY/kS6B6MteNjEdOgfWhA7uVDTyhvvv140kKrE31C9jqn3/Fw==
 
 "@eslint/eslintrc@^0.3.0":
   version "0.3.0"
@@ -2364,12 +2364,11 @@ eslint-plugin-json@2.1.2:
     lodash "^4.17.19"
     vscode-json-languageservice "^3.7.0"
 
-eslint-plugin-markdown@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-markdown/-/eslint-plugin-markdown-1.0.2.tgz#79274bf17ce3ead48e4a55cbcb6d7ce735754280"
-  integrity sha512-BfvXKsO0K+zvdarNc801jsE/NTLmig4oKhZ1U3aSUgTf2dB/US5+CrfGxMsCK2Ki1vS1R3HPok+uYpufFndhzw==
+eslint-plugin-markdown@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-markdown/-/eslint-plugin-markdown-2.0.0.tgz#cd650beda2b599cd9e4535ea369266b5d0e49d23"
+  integrity sha512-zt10JoexHeJFMTE5egDcetAJ34bn5k/92s0wAuRZfhDAyI0ryEj+O91JL2CbBExajie6BE5L63y47dN1Sbp6mQ==
   dependencies:
-    object-assign "^4.0.1"
     remark-parse "^5.0.0"
     unified "^6.1.2"
 
