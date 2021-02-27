@@ -52,7 +52,7 @@
     "babel-preset-latest-node": "5.4.0",
     "chai": "4.3.0",
     "coveralls": "3.1.0",
-    "eslint": "7.20.0",
+    "eslint": "7.21.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-json": "2.1.2",
