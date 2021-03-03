@@ -50,7 +50,7 @@
     "@blackflux/robo-config-plugin": "4.1.2",
     "babel-eslint": "10.1.0",
     "babel-preset-latest-node": "5.4.0",
-    "chai": "4.3.1",
+    "chai": "4.3.2",
     "coveralls": "3.1.0",
     "eslint": "7.21.0",
     "eslint-config-airbnb-base": "14.2.1",
