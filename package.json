@@ -20,7 +20,7 @@
   ],
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "scripts": {
     "clean": "rm -rf lib",
