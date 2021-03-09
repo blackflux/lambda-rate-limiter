@@ -8,7 +8,7 @@
       "packageName": "lambda-rate-limiter",
       "projectName": "lambda-rate-limiter",
       "owner": "simlu",
-      "nodeVersion": "10",
+      "nodeVersion": "12",
       "ownerName": "Lukas Siemon",
       "mergeBot": "MrsFlux"
     }
