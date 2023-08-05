@@ -1,9 +1,9 @@
-const LRU = require('lru-cache');
+import LRU from 'lru-cache-ext';
 
-module.exports = (options) => {
+export default (options) => {
   const tokenCache = new LRU({
     max: parseInt(options.uniqueTokenPerInterval || 500, 10),
-    maxAge: parseInt(options.interval || 60000, 10)
+    ttl: parseInt(options.interval || 60000, 10)
   });
 
   return {
@@ -13,7 +13,7 @@ module.exports = (options) => {
         tokenCache.set(token, tokenCount);
       }
       tokenCount[0] += 1;
-      return (tokenCount[0] <= parseInt(limit, 10) ? resolve : reject)(tokenCount[0]);
+      (tokenCount[0] <= parseInt(limit, 10) ? resolve : reject)(tokenCount[0]);
     })
   };
 };
