@@ -74,35 +74,5 @@
   "files": [
     "lib"
   ],
-  "peerDependencies": {},
-  "nyc": {
-    "tempDir": "./coverage/.nyc_output",
-    "report-dir": "./coverage",
-    "check-coverage": true,
-    "per-file": false,
-    "lines": 100,
-    "statements": 100,
-    "functions": 100,
-    "branches": 100,
-    "include": [
-      "**/*.js"
-    ],
-    "exclude": [
-      "gardener.js",
-      "node_modules/*",
-      "coverage/*",
-      "lib/*"
-    ],
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "require": [
-      "@babel/register"
-    ],
-    "extension": [],
-    "cache": true,
-    "all": true,
-    "babel": true
-  }
+  "peerDependencies": {}
 }
