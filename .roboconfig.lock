@@ -13,10 +13,12 @@
     ".releaserc.json",
     "LICENSE",
     "README.md",
+    "eslint.config.js",
     "gardener.js",
     "package.json",
     "src/index.js",
     "test/hot.js",
-    "test/index.spec.js"
+    "test/index.spec.js",
+    "test/reg.js"
   ]
 }
