@@ -4,7 +4,9 @@
     "node_modules/*",
     "coverage/*",
     "lib/*",
-    "test/hot.js"
+    "test/hot.js",
+    "test/reg.js",
+    "eslint.config.js"
   ],
   "temp-directory": "./coverage/.c8_output",
   "reports-dir": "./coverage",
